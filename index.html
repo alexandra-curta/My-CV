@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Main page</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="./styles.css"/>
+        <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,300" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    </head>
+
+    <body>
+
+        <!--Main details-->
+
+        <div id="main">
+            <div class="profileSection">
+                <img src="pic.jpg" alt="Alexandra's profile picture" id="profilePicture"/>
+                <div class="name">Alexandra Curta</div>
+                <div class="profile_description">Passionate <br> Front-end Developer</div>
+            </div>
+            <div class="nav"></div>
+            <div class="quote">
+                <h2>Hi! My name is Alexandra,</h2>
+                I am a passionate front-end developer and I'm addicted to travel. On a daily basis, I work as a Project Manager and I have the overall responsibility for the successful planning and execution of a project. My #1 guiding principle is:
+                <br />
+                <span><em>"The only constant in life is change!"</em></span>
+                </br>
+            </div>
+        </div>
+
+        <!--End of Main details-->
+
+        <!--Modals for the following buttons: education, professional, skills, hobbies-->
+    
+        <!--Modal Education-->
+        
+        <div class="w3-containerEducation">
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-pale-red" id="education"></button>
+            <div id="id01" class="w3-modal w3-animate-opacity">
+                <div class="w3-modal-content w3-card-4 w3-animate-zoom" >
+                    <header class="w3-container w3-blue"> 
+                        <span onclick="document.getElementById('id01').style.display='none'"class="w3-button w3-blue w3-xlarge w3-display-topright">&times;</span>
+                        <h5>Education</h5>
+                    </header>
+                    <div class="containerEducation">
+                        <section class="timeline">
+                            <ul>
+                                <li>
+                                    <div class="timeline__date">2006-2010</div>
+                                    <p>National Colleage Emanuil Gojdu, <br> Oradea</p>
+                                </li>
+                                <li>
+                                    <div class="timeline__date">2010-2014</div>
+                                    <p>Faculty of Letters, <br> University of Babes-Bolyai</p>
+                                </li>
+                                <li>
+                                    <div class="timeline__date">2014-2016</div>
+                                    <p>Management of Human Resources, <br>University of Babes-Bolyai</p>
+                                </li>
+                                <li>
+                                    <div class="timeline__date">Feb, 2019</div>
+                                    <p>Intro in IT, <br> Scoala Informala de IT</p>
+                                </li>
+                                <li>
+                                    <div class="timeline__date">Jun, 2019</div>
+                                    <p>Web Development, <br> Scoala Informala de IT</p>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="w3-container w3-light-grey w3-padding">
+                        <button class="w3-button w3-right w3-white w3-border" onclick="document.getElementById('id01').style.display='none'">Close</button>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+    
+    <!--End of Modal Education-->
+
+    <!--Modal Professional-->
+
+    <div class="w3-container">
+        <button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-pale-red" id="professional"></button>
+        <div id="id02" class="w3-modal w3-animate-opacity">
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                <header class="w3-container w3-blue"> 
+                    <span onclick="document.getElementById('id02').style.display='none'"class="w3-button w3-blue w3-xlarge w3-display-topright">&times;</span>
+                    <h5>Professional Experience</h5>
+                </header>
+                <div class="containerProfessional">
+                    <ul class="timelineProf">
+                        <li>
+                            <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">PROJECT ADMINISTRATOR</h4>
+                                    <h5 class="timeline-title">Emerson Automation Solutions</h5>
+                                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Sep 2014 – Apr 2016 </small></p>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>I was responsible for ensuring proper project administration through data quality and accuracy in business systems by communicating closely with stakeholders across European World Area. </p>
+                                    <h5><strong>Achievements:</strong></h5>
+                                    <ul>
+                                        <li>Established a realistic and sustainable personal development plan;</li>
+                                        <li>Always achieved my organizational objectives;</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">SENIOR PROJECT ADMINISTRATOR</h4>
+                                    <h5 class="timeline-title">Emerson Automation Solutions</h5>
+                                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Apr 2016 – Mar 2017</small></p>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Support projects organization with project administration to meet customer’s expectations and contribute to fulfil the company’s financial and strategic goals. Execute projects from initiation to closure phase and ensure proper management of project data in business systems. </p>
+                                    <h5><strong>Achievements:</strong></h5>
+                                    <ul>
+                                        <li>Actively involved in process standardization, process improvement initiatives and trainings;</li>
+                                        <li>Learned effectively and continuously by working with a wide variety of means (coaching, knowledge sharing and training).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">PROJECT ADMINISTRATION TEAM LEADER</h4>
+                                    <h5 class="timeline-title">Emerson Automation Solutions</h5>
+                                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> June 2017 - Sept 2019</small></p>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>As a Team Leader, I was responsible for ensuring the success of both the project administration team (18 members) and the project. In charge with recruitment, employee development, performance management, workload assignment, prioritization and utilization of the team.</p>
+                                    <h5><strong>Achievements:</strong></h5>
+                                    <ul>
+                                        <li>Worked together with the team in developing new skills and creating opportunities in achieving a new level of performance;</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">PROJECT MANAGER</h4>
+                                    <h5 class="timeline-title">Betfair Development Romania</h5>
+                                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Sept 2019 - Present</small></p>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Responsible for activity and resource planning as well as for organizing and motivating the project team. Risk and cost management is also an important part of the job, while meeting customer's expectations.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w3-container w3-light-grey w3-padding">
+                    <button class="w3-button w3-right w3-white w3-border" onclick="document.getElementById('id02').style.display='none'">Close</button>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!--End of Modal Professional-->
+
+    <!-- Modal Skills -->
+
+    <div class="w3-container">
+        <button onclick="document.getElementById('id03').style.display='block'" class="w3-button w3-pale-red" id="skills"></button>
+        <div id="id03" class="w3-modal w3-animate-opacity">
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                <header class="w3-container w3-blue"> 
+                    <span onclick="document.getElementById('id03').style.display='none'"class="w3-button w3-blue w3-xlarge w3-display-topright">&times;</span>
+                    <h5>Skills, Certificates & Tools</h5>
+                </header>
+                <div class="w3-bar w3-border-bottom">
+                    <button class="tablink w3-bar-item w3-button" onclick="openArea(event, 'skillsContainer')">Skills</button>
+                    <button class="tablink w3-bar-item w3-button" onclick="openArea(event, 'certificates')">Certificates</button>
+                    <button class="tablink w3-bar-item w3-button" onclick="openArea(event, 'tools')">Tools</button>
+                    <button class="tablink w3-bar-item w3-button" onclick="openArea(event, 'language')">Language</button>
+                </div>
+                <div id="skillsContainer" class="w3-container area">
+                    <ul class="businessDevelopment">
+                        <h5>Business Development</h5>
+                        <li>Leadership</li>
+                        <li>Projects management</li>
+                        <li>Commercial procurement</li>
+                        <li>Drives results</li>
+                        <li>Ensures accountability</li>
+                    </ul>
+                    <ul class="professional">
+                        <h5>Professional</h5>
+                        <li>Risk management</li>
+                        <li>Planning and organizing</li>
+                        <li>Process Control</li>
+                        <li>Directs work</li>
+                        <li>Being resilient</li>
+                    </ul>
+                    <ul class="personal">
+                        <h5>Personal</h5>
+                        <li>Communicate effectively</li>
+                        <li>Team player</li>
+                        <li>Problem solving</li>
+                        <li>Proactive</li>
+                        <li>Nimble learning</li>
+                    </ul>
+                </div> 
+                <div id="certificates" class="w3-container area">
+                    <ul class="trainingsCertificates">
+                        <h5>Trainings & Certificates</h5>
+                        <li>Project Management Training</li>
+                        <li>Quarterly Outstanding Service Award (Certificate of Achievement, 2019)</li>
+                        <li>Safety Leadership</li>
+                        <li>Leading Millennials</li>
+                        <li>Effective Communication</li>
+                        <li>Black Belt Negotiations</li>
+                        <li>Building Team Spirit</li>
+                        <li>Fast Start in Project Management</li>
+                    </ul>
+                </div>
+                <div id="tools" class="w3-container area">
+                    <section class="containerTools">
+                        <!-- HTML Chart -->
+                        <figure class="chart" data-percent="75">
+                            <figcaption>HTML</figcaption>
+                            <img class="html" src="https://dl.dropboxusercontent.com/s/68gv23q4y5qyq52/html5.svg">
+                            <svg width="200" height="200">
+                                <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
+                            </svg>
+                        </figure>        
+                            <!-- CSS Chart -->
+                        <figure class="chart" data-percent="75">
+                            <figcaption>CSS</figcaption>
+                            <img class="css" src="https://dl.dropboxusercontent.com/s/gftbpqje9h2jvlv/css3.svg">
+                            <svg width="200" height="200">
+                                <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
+                            </svg>
+                        </figure>
+                        <!-- Javascript Chart -->
+                        <figure class="chart" data-percent="50">
+                            <figcaption>Javascript</figcaption>
+                            <img class="javascript" src="https://dl.dropboxusercontent.com/s/jsp3rsberc4q650/javascript.svg">
+                            <svg width="200" height="200">
+                                <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
+                            </svg>
+                        </figure>
+                    </section>
+                </div>    
+                <div id="language" class="w3-container area">
+                    <ul class="languageContainer">
+                        <h4>Language</h4></br>
+                        <h5>Romanian: Native</h5>
+                        <h5>German: Medium</h5></br>
+                    </ul>
+                </div>
+                <div class="w3-container w3-light-grey w3-padding">
+                    <button class="w3-button w3-right w3-white w3-border" onclick="document.getElementById('id03').style.display='none'">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--End of Modal Skills-->
+        
+    <!--Modal Hobbies-->
+
+    <div class="container-hobbies">
+        <button type="button" class="w3-button w3-pale-red" data-toggle="modal" data-target="#myModal" id="hobbies"></button>
+        <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Hobbies</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                                <li data-target="#myCarousel" data-slide-to="3"></li>
+                                <li data-target="#myCarousel" data-slide-to="4"></li>
+                                <li data-target="#myCarousel" data-slide-to="5"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="Hobbies/basketball.jpg" alt="basketball" style="width:100%;">
+                                </div>
+                                <div class="item">
+                                    <img src="Hobbies/dancing.jpg" alt="dancing" style="width:100%;">
+                                </div>
+                                <div class="item">
+                                    <img src="Hobbies/gaming.jpg" alt="gaming" style="width:100%;">
+                                </div>
+                                <div class="item">
+                                    <img src="Hobbies/reading.jpg" alt="reading" style="width:100%;">
+                                </div>
+                                <div class="item">
+                                    <img src="Hobbies/snorkeling.jpg" alt="snorkeling" style="width:100%;">
+                                </div>
+                                <div class="item">
+                                    <img src="Hobbies/traveling.jpg"gaming" style="width:100%;">
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+    </div>
+
+    <!--End of Modal Hobby-->
+
+    <!--Menu-->
+
+    <div id="menu" class="social-container">
+        <ul class="social-icons">
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/tweeter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://www.dropbox.com/?landing=dbv2" target="_blank"><i class="fa fa-codepen"></i></a></li>
+        </ul>
+    </div>
+    
+    <!--End of Menu-->
+
+    <!--Button-->
+    <div class="containerButton">
+        <button onclick="scrollWin(0, 700)" class="buttonScroll">Contact Me</button>
+    </div>
+    <!--End of button-->
+    
+    <!--Contact me--> 
+
+    <div id="contactmeModal">
+    <div class="contentContactme">
+        <div class="row">
+            <div class="col s8 offset-s2">
+               <div id="content" class="m2">                                        
+                    <header id="headerBtn" class=" pink darken-1">Contact Me</header>
+                        <form id="send-mail" action="" class="col s10 offset-s1">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <label for="email">To:</label>
+                                    
+                                    <input id="email" type="email">
+                                </div>
+                                <div class="input-field col s12">
+                                    <label for="subject">Subject:</label>
+                                    <input id="subject" type="text">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <label for="message">Message: </label>
+                                    <textarea id="message" class="materialize-textarea"></textarea>
+                                </div>
+                            </div>
+                            <div class="row" id="loaders">
+                                <img id="spinner" src="https://www.dropbox.com/s/wfsji06m6jfe0yl/spinner.gif?raw=1" width="150">
+                            </div>
+                            <div class="row">
+                                <div class="col s6">
+                                    <button href="mailto:alecsandra.curta@gmail.com" id="send" class="btn waves-effect waves-light  pink darken-2" type="submit" name="action">Send
+                                        <i class="material-icons right">send</i>
+                                    </button>
+                                </div>
+                                <div class="col s6">
+                                    <button id="resetBtn" class="btn waves-effect waves-light light-blue darken-2" type="submit">Reset
+                                        <i class="material-icons right">delete</i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form> 
+                    </div>
+                </div>
+            </div>        
+        </div>
+    </div>
+
+    <!--End of contact me-->
+    
+    <!--Recommendations-->
+
+    <div class="containerRecomandari">
+        <h6>Recommendations:</h6></br>
+		<div id="app">
+			<div id='set-time-out'></div>
+			<div id='promise'></div>
+		</div>
+    </div>
+
+    <!--End of Recommendations-->
+
+    <footer>
+        <span>Contact me: <i class="fa fa-phone" aria-hidden="true"></i> +40 751 604 150 <i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:alecsandrabologa@yahoo.ro" class="email"> alecsandrabologa@yahoo.ro</a>  </span>
+    </footer>
+   
+
+    <script src="./index.js"></script>
+  </body>
+</html>
